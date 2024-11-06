@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            color: rgb(25, 10, 236);
+        }
+
+        /* Background */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff6f91, #ff9671, #ffc75f, #f9f871);
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        /* Background Gradient Animation */
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Main Content */
+        .container {
+            text-align: center;
+            color: white;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+        }
+
+        /* Button */
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            color: #333;
+            background: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        } 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Music World</h1>
+        <p>Explore beats, melodies, and vibes from around the globe.</p>
+        <a href="in.html" class="btn">Explore Music</a>
+    </div>
+
+</body>
+</html>
